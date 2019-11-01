@@ -1,1 +1,54 @@
-<p>card-list works!</p>
+<div class="container">
+  <div class="content-block">
+    <mat-grid-list class="grid-list" cols="3">
+      <mat-grid-tile class="grid-tile">
+        <div class="scene">
+          <div class="card" (click)="onClickCard(imageList[0])" [class.is-flipped]="imageList[0].click" [ngStyle]="{'background-image': 'url(' + imageList[0].url + ')', 'background-size': 'cover', 'background-repeat': 'no-repeat', 'background-position': '50% 50%'}">
+            <div class="card__face_front" [class.card__face]="!imageList[0].click">front</div>
+            <div class="card__face_back" [class.card__face]="imageList[0].click">back</div>
+          </div>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile class="grid-tile">
+        <div class="scene">
+          <div class="card" (click)="onClickCard(imageList[1])" [class.is-flipped]="imageList[1].click" [ngStyle]="{'background-image': 'url(' + imageList[1].url + ')', 'background-size': 'cover', 'background-repeat': 'no-repeat', 'background-position': '50% 50%'}">
+            <div class="card__face_front" [class.card__face]="!imageList[1].click">front</div>
+            <div class="card__face_back" [class.card__face]="imageList[1].click">back</div>
+          </div>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile class="grid-tile">
+        <div class="scene">
+          <div class="card" (click)="onClickCard(imageList[2])" [class.is-flipped]="imageList[2].click" [ngStyle]="{'background-image': 'url(' + imageList[2].url + ')', 'background-size': 'cover', 'background-repeat': 'no-repeat', 'background-position': '50% 50%'}">
+            <div class="card__face_front" [class.card__face]="!imageList[2].click">front</div>
+            <div class="card__face_back" [class.card__face]="imageList[2].click">back</div>
+          </div>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile class="grid-tile">
+        <div class="scene">
+          <div class="card" (click)="onClickCard(imageList[3])" [class.is-flipped]="imageList[3].click" [ngStyle]="{'background-image': 'url(' + imageList[3].url + ')', 'background-size': 'cover', 'background-repeat': 'no-repeat', 'background-position': '50% 50%'}">
+            <div class="card__face_front" [class.card__face]="!imageList[3].click">front</div>
+            <div class="card__face_back" [class.card__face]="imageList[3].click">back</div>
+          </div>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile class="grid-tile">
+        <div class="scene">
+          <div class="card" (click)="onClickCard(imageList[4])" [class.is-flipped]="imageList[4].click" [ngStyle]="{'background-image': 'url(' + imageList[4].url + ')', 'background-size': 'cover', 'background-repeat': 'no-repeat', 'background-position': '50% 50%'}">
+            <div class="card__face_front" [class.card__face]="!imageList[4].click">front</div>
+            <div class="card__face_back" [class.card__face]="imageList[4].click">back</div>
+          </div>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile class="grid-tile">
+        <div class="scene">
+          <div class="card" (click)="onClickCard(imageList[5])" [class.is-flipped]="imageList[5].click" [ngStyle]="{'background-image': 'url(' + imageList[5].url + ')', 'background-size': 'cover', 'background-repeat': 'no-repeat', 'background-position': '50% 50%'}">
+            <div class="card__face_front" [class.card__face]="!imageList[5].click">front</div>
+            <div class="card__face_back" [class.card__face]="imageList[5].click">back</div>
+          </div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>

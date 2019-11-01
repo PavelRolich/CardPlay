@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .content-block {
+  width: 50%;
+  height: 60%;
+}
+.container .content-block .grid-list .grid-tile .scene {
+  perspective: 600px;
+}
+.container .content-block .grid-list .grid-tile .scene .card {
+  height: 300px;
+  width: 400px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+.container .content-block .grid-list .grid-tile .scene .card .card__face {
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+.container .content-block .grid-list .grid-tile .scene .card .card__face_front {
+  background: red;
+}
+.container .content-block .grid-list .grid-tile .scene .card .card__face_back {
+  transform: rotateY(180deg);
+}
+.container .content-block .grid-list .grid-tile .scene .is-flipped {
+  transform: rotateY(180deg);
+}
